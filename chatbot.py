@@ -17,7 +17,7 @@ def main():
     global redis1
     redis1 = redis.Redis(host=(os.environ['HOST']),
                          password=(os.environ['PASSWORD']),
-                         port=(os.environ['REDISPORT'])
+                         port=(os.environ['REDISPORT']))
 
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         level=logging.INFO)
